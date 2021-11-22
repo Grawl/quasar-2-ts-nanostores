@@ -1,0 +1,31 @@
+{
+	"extends": "@quasar/app/tsconfig-preset",
+	"compilerOptions": {
+		"baseUrl": ".",
+		"experimentalDecorators": true,
+		"skipLibCheck": true,
+		"noUnusedLocals": true,
+		"lib": [
+			"ESNext.String",
+			"dom"
+		],
+		"paths": {
+			"src/*": ["src/*"],
+			"app/*": ["*"],
+			"components/*": ["src/components/*"],
+			"layouts/*": ["src/layouts/*"],
+			"pages/*": ["src/pages/*"],
+			"assets/*": ["src/assets/*"],
+			"boot/*": ["src/boot/*"],
+
+			"lib": ["src/lib"],
+			"lib/*": ["src/lib/*"],
+
+			"vue$": ["node_modules/vue/dist/vue.esm.js"]
+		},
+		"types": [
+			"quasar"
+		],
+		"esModuleInterop": true
+	}
+}

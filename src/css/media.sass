@@ -1,0 +1,66 @@
+@import quasar.variables
+
+@function vw-down($bp)
+	@return "(max-width: #{$bp})"
+@function vw-up($bp)
+	@return "(min-width: #{$bp + 1})"
+
+@function vh-down($bp)
+	@return "(max-height: #{$bp})"
+@function vh-up($bp)
+	@return "(min-height: #{$bp + 1})"
+
+$bp-xs: 350px
+=vw-xs-up
+	@media #{vw-up($bp-xs)}
+		@content
+=vw-xs-down
+	@media #{vw-down($bp-xs)}
+		@content
+
+$bp-sm: $breakpoint-xs
+=vw-sm-up
+	@media #{vw-up($bp-sm)}
+		@content
+=vw-sm-down
+	@media #{vw-down($bp-sm)}
+		@content
+
+$bp-d: 1280px
+=vw-d-up
+	@media #{vw-up($bp-d)}
+		@content
+=vw-d-down
+	@media #{vw-down($bp-d)}
+		@content
+
+$bp-md: $breakpoint-sm
+=vw-md-up
+	@media #{vw-up($bp-md)}
+		@content
+=vw-md-down
+	@media #{vw-down($bp-md)}
+		@content
+
+$bp-lg: $breakpoint-md
+=vw-lg-up
+	@media #{vw-up($bp-lg)}
+		@content
+=vw-lg-down
+	@media #{vw-down($bp-lg)}
+		@content
+
+$bp-xl: $breakpoint-lg
+=vw-xl-up
+	@media #{vw-up($bp-xl)}
+		@content
+=vw-xl-down
+	@media #{vw-down($bp-xl)}
+		@content
+
+=touch
+	@media (hover: none) and (pointer: coarse)
+		@content
+=dark
+	@media (prefers-color-scheme: dark)
+		@content

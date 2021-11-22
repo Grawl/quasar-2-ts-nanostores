@@ -1,0 +1,22 @@
+@import media
+.q-btn
+	text-transform: unset
+	font-size: 1em
+	font-weight: 700
+	+vw-sm-up
+		padding: 0.8em 2em
+	.q-icon
+		&.on-left
+			margin-left: -0.5em
+		&.on-right
+			margin-right: -0.5em
+	&--round
+		align-self: center
+		padding: 0.8em
+		border-radius: 10em
+.q-notification
+	box-shadow: 0 4px 16px hsla(216, 100%, 16%, 0.12)
+	&.bg-info
+		border: 1px solid lighten($info, 4%)
+	&__wrapper
+		flex-flow: row wrap

@@ -1,0 +1,68 @@
+// Quasar Sass (& SCSS) Variables
+// --------------------------------------------------
+// To customize the look and feel of this app, you can override
+// the Sass/SCSS variables found in Quasar's source Sass/SCSS files.
+
+// Check documentation for full list of Quasar variables
+
+// Your own variables (that are declared here) and Quasar's own
+// ones will be available out of the box in your .vue/.scss/.sass files
+
+// It's highly recommended to change the default colors
+// to match your app's branding.
+// Tip: Use the "Theme Builder" on Quasar's documentation website.
+
+@import '~quasar/src/css/variables';
+
+$primary: hsl(216, 74%, 44%);
+$secondary: hsl(174, 63%, 40%);
+$accent: hsl(338, 100%, 35%);
+$dark: hsl(0, 0%, 11%);
+$positive: hsl(134, 70%, 43%);
+$negative: hsl(353, 100%, 38%);
+$info: hsl(203, 100%, 91%);
+$warning: hsl(44, 88%, 58%);
+
+$typography-font-family: '-apple-system', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+$breakpoint-xs: 600px - 1;
+$breakpoint-sm: 1024px - 1;
+$breakpoint-md: 1440px - 1;
+$breakpoint-lg: 1920px - 1;
+
+$h1: (
+	size: 3em,
+	line-height: 1.2,
+	letter-spacing: -.01562em,
+	weight: 300
+);
+$h2: (
+	size: 2.5em,
+	line-height: 1.2,
+	letter-spacing: -.00833em,
+	weight: 300
+);
+$h3: (
+	size: 2em,
+	line-height: 1.2,
+	letter-spacing: normal,
+	weight: 400
+);
+$h4: (
+	size: 1.75em,
+	line-height: 1.2,
+	letter-spacing: .00735em,
+	weight: 400
+);
+$h5: (
+	size: 1.5em,
+	line-height: 1.2,
+	letter-spacing: normal,
+	weight: 400
+);
+$h6: (
+	size: 1.25em,
+	line-height: 1.2,
+	letter-spacing: .0125em,
+	weight: 500
+);
